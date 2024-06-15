@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package meat;
+option go_package = "gofortest/grpc/proto;proto";
+
+// The request message containing a string with meat names and amounts.
+message MeatRequest {
+    string meat_list = 1;
+}
+
+// The response message containing the list of meats with their amounts.
+message MeatResponse {
+    map <string,int32> meat_items = 1;
+}
+
+
+// The meat service definition.
+service MeatService {
+    // Sends a MeatRequest and receives a MeatResponse.
+    rpc GetMeatAmounts (MeatRequest) returns (MeatResponse);
+}
