@@ -40,7 +40,7 @@ func TestGetMeatAmounts(t *testing.T) {
 
 	conn, err := grpc.NewClient("passthrough://bufnet", grpc.WithContextDialer(bufDialer), grpc.WithTransportCredentials(insecure.NewCredentials()))
 	if err != nil {
-		t.Fatalf("Failed to dial bufnet: %v", err)
+		t.Fatalf("Failed to dial bufffnet: %v", err)
 	}
 	defer conn.Close()
 	client := pb.NewMeatServiceClient(conn)
