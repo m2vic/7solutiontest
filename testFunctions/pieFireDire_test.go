@@ -2,7 +2,7 @@ package pkg_test
 
 import (
 	"encoding/json"
-	pkg "gofortest/pkg/methods"
+	pkg "gofortest/testFunctions"
 	"testing"
 )
 

@@ -1,7 +1,7 @@
 package pkg_test
 
 import (
-	pkg "gofortest/pkg/methods"
+	pkg "gofortest/testFunctions"
 	"testing"
 )
 

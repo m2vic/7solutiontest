@@ -1,8 +1,9 @@
 package pkg_test
 
 import (
-	pkg "gofortest/pkg/methods"
 	"testing"
+
+	pkg "gofortest/testFunctions"
 )
 
 func TestLeftRight(t *testing.T) {
